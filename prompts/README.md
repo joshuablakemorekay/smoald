@@ -11,6 +11,7 @@ Each prompt directory contains the final version, the reasoning behind it, an ex
 | Prompt | Category | What it does | Iterated? |
 |---|---|---|---|
 | [`build-smoald-brand-hub`](./build-smoald-brand-hub/) | agent-workflow | Turns a brand-architecture brief into a complete, deployed multi-page "brand house" site | Yes (v1→v4) |
+| [`redesign-homepage-figma-merge`](./redesign-homepage-figma-merge/) | code-generation | Merges a Figma design's tri-colour system and interactive "Ecosystem" into the live homepage while preserving the existing site | Yes (v1→v3) |
 
 ## Featured iterations
 
@@ -18,6 +19,9 @@ Prompts where the v1 → final journey shows the most learning:
 
 ### [`build-smoald-brand-hub`](./build-smoald-brand-hub/)
 What began as a four-word "just do it" grew into a deployed, four-page website over four rounds. v1 built the hubs; v2 added the full hub-and-spoke model; v3 wired in the existing portfolio and settled the project name; v4 repositioned the build hub from "Tech" to "AI" and gave the portfolio a clean `/ai/hire` URL that mirrors the brand's own structure. The story shows natural language steered into a real product — and the judgment calls (honest "coming soon" states, consistent branding, no dead links) that kept it shippable.
+
+### [`redesign-homepage-figma-merge`](./redesign-homepage-figma-merge/)
+A masterclass in *constrained* redesign. The brief was "merge this Figma design in while keeping everything as it is" — so the challenge wasn't building something new, it was adopting a design's best ideas (a red/yellow/orange pillar system, an interactive "Ecosystem") without discarding the founder framing, copy, and sub-pages that already worked. v1 chose to rebuild the look in the existing static site rather than adopt the Figma export's React framework; v2 delivered the merge as a preview-before-deploy; v3 swapped in the real logo, removing a screenshot's baked-in background programmatically and verifying the result before sign-off. The judgment calls — preview before going live, catching that the repo deploys via `wrangler` not git push, knocking out a logo background cleanly — are the story.
 
 ## Skills demonstrated
 

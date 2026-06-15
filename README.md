@@ -23,6 +23,9 @@ The homepage of SMOALD — a single hub linking everything I build, learn and se
 3. To deploy: `wrangler pages deploy . --project-name=smoald`
 
 ## My Journey
+### 2026-06-15 — Homepage redesign from a Figma design
+I merged a Figma design I liked — a red/yellow/orange colour system and an interactive "Ecosystem" visual — into my existing homepage, keeping all my copy, founder framing and sub-pages intact. I built it as a preview first so the live site stayed safe, deployed the redesign, then swapped in my real logo (removing its background automatically with a small Python script). **Key lesson:** this site only goes live when I run the deploy command — a git push alone doesn't publish it.
+
 ### 2026-06-15 — Built & shipped the SMOALD.com brand hub
 Turned a brand-architecture idea into a live, 4-page "brand house" on Cloudflare Pages with the `smoald.com` domain, then archived the prompts that built it with an eval harness. Built the hub, added the full hub-and-spoke model, wired in my portfolio at `/ai/hire`, renamed "Tech" → "AI", and connected the domain. **Key lesson:** Cloudflare Pages custom domains need DNS records the API won't auto-create, and a Pages-only token can't list accounts — plus I fixed a Windows UTF-8 crash in the eval runner.
 

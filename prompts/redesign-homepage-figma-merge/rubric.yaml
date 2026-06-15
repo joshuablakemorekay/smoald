@@ -1,0 +1,60 @@
+# Evaluation rubric for: Merge a Figma Design Into the Live Homepage
+#
+# The "output" evaluated here is the redesigned homepage HTML. Each criterion
+# checks an observable property of that markup — proving the merge adopted the
+# new design AND preserved the existing site.
+
+prompt: redesign-homepage-figma-merge
+version: 3
+criteria:
+  - name: tri_colour_system
+    description: All three pillar colours are present — Build orange, Learn yellow, Shop red
+    weight: 5
+    pass_condition: all(c in output for c in ['#FF6A3D', '#FFB23D', '#F04438'])
+
+  - name: interactive_ecosystem
+    description: The interactive "Ecosystem" section replaced the static map
+    weight: 4
+    pass_condition: "'The Ecosystem' in output and 'eco-node' in output"
+
+  - name: founder_framing_kept
+    description: The existing founder positioning was preserved, not dropped
+    weight: 4
+    pass_condition: "'Founded' in output or 'founder' in output.lower()"
+
+  - name: subpages_preserved
+    description: Links to all three sub-pages still work after the redesign
+    weight: 4
+    pass_condition: all(p in output for p in ['ai.html', 'learn.html', 'store.html'])
+
+  - name: honest_status
+    description: Unbuilt areas stay honest with "coming soon" rather than faked
+    weight: 3
+    pass_condition: "'coming soon' in output.lower()"
+
+  - name: real_logo_wired
+    description: The real SMOALD logo art is referenced (not just a code placeholder)
+    weight: 3
+    pass_condition: "'smoald-logo' in output"
+
+  - name: stays_static_no_build
+    description: Remains a single static page — no React root mount left behind
+    weight: 2
+    pass_condition: "'<div id=\"root\">' not in output"
+
+test_cases:
+  - input:
+      round: v2-merge
+      ask: merge the Figma colours and ecosystem while keeping the existing site
+    expected_traits:
+      - all three pillar colours present
+      - interactive Ecosystem section
+      - founder framing and sub-pages preserved
+
+  - input:
+      round: v3-logo
+      ask: replace the placeholder wordmark with the real logo, background removed
+    expected_traits:
+      - real logo art referenced
+      - tri-colour system intact
+      - still a single static page

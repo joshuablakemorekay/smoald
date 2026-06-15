@@ -37,6 +37,7 @@
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
   .brand{font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
   .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--build);box-shadow:0 0 14px var(--build)}
+  .brand-logo{height:34px;width:auto;display:block}
   .nav-links{display:flex;align-items:center;gap:30px}
   .nav-links a{font-size:.95rem;color:var(--muted);transition:color .2s}
   .nav-links a:hover{color:var(--text)}
@@ -57,6 +58,9 @@
   .hero h1{font-family:var(--display);font-weight:800;font-size:clamp(3.4rem,11vw,7.5rem);line-height:.96;letter-spacing:-.03em;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;gap:.04em}
   .hero h1 .tail{color:var(--build)}
   .hero h1 .globe{width:.82em;height:.82em;flex:none;color:var(--build);filter:drop-shadow(0 0 18px rgba(255,106,61,.35))}
+  /* logo image hero — transparent PNG, sits cleanly over the hero glow */
+  .hero h1.hero-logo{display:block;margin:0 auto 18px}
+  .hero h1.hero-logo img{width:min(640px,88vw);height:auto;display:block;margin:0 auto;filter:drop-shadow(0 8px 34px rgba(0,0,0,.35))}
   .hero-sub{font-size:1.2rem;color:var(--muted);max-width:48ch;margin:0 auto 14px;line-height:1.65}
   .hero-sub strong{color:var(--text);font-weight:600}
   .hero-sub .b{color:var(--build)} .hero-sub .l{color:var(--learn)} .hero-sub .s{color:var(--shop)}
@@ -231,7 +235,7 @@
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="brand"><span class="dot"></span>SMOALD</a>
+    <a href="index.html" class="brand" aria-label="SMOALD home"><img src="assets/smoald-logo-nav.png" alt="SMOALD" class="brand-logo" /></a>
     <div class="nav-links" id="navLinks">
       <a href="#ecosystem">Ecosystem</a>
       <a href="ai.html">AI</a>
@@ -248,13 +252,7 @@
   <div class="hero-glow"></div>
   <div class="wrap">
     <div class="hero-tag">Smart &amp; Bold</div>
-    <h1>
-      <span>SM</span>
-      <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-        <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><ellipse cx="12" cy="12" rx="4.4" ry="10"/><path d="M4 6.5c4.6 2.4 11.4 2.4 16 0M4 17.5c4.6-2.4 11.4-2.4 16 0"/>
-      </svg>
-      <span class="tail">ALD</span>
-    </h1>
+    <h1 class="hero-logo"><img src="assets/smoald-logo-hero.png" alt="SMOALD" /></h1>
     <p class="hero-sub">One brand house, three doors. <strong class="b">Build</strong> with AI, <strong class="l">learn</strong> with us, or <strong class="s">shop</strong> with us.</p>
     <p class="hero-founder">Founded &amp; run by Joshua Kay</p>
     <div class="hero-btns">

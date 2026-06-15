@@ -7,6 +7,25 @@ Each entry follows this format:
 
 ---
 
+## redesign-homepage-figma-merge
+
+### 2026-06-15 — v3
+**Change:** Replaced the code-built `SM◍ALD` placeholder with the real cloud + globe logo art, removing the screenshots' baked-in dark background programmatically (Pillow brightness key) to get clean transparent PNGs.
+**Reason:** A first `mix-blend-mode` attempt left a faint box / washed-out colours; a true transparent logo was needed.
+**Impact:** Nav and hero logos sit cleanly over the dark site; verified by compositing over the site colour before sign-off.
+
+### 2026-06-15 — v2
+**Change:** Merged the Figma design's tri-colour system (Build orange / Learn yellow / Shop red) and an interactive "Ecosystem" into the homepage, replacing the old static architecture map. Delivered as a preview file first, then deployed live.
+**Reason:** Adopt the design ideas the user liked while keeping the existing site, copy, and founder framing intact.
+**Impact:** Redesign verified live on smoald.com; the static, no-build architecture was preserved.
+
+### 2026-06-15 — v1
+**Change:** Initial version — assessed the Figma Make link and its React/Vite/Tailwind export.
+**Reason:** Decide how to "use" the design.
+**Impact:** Chose to rebuild the look inside the existing static site rather than adopt the framework, keeping the site fast and consistent.
+
+---
+
 ## build-smoald-brand-hub
 
 ### 2026-06-15 — v4

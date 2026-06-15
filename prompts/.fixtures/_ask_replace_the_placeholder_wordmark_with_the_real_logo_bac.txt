@@ -1,0 +1,27 @@
+<!-- SMOALD homepage with the real transparent logo (representative generated output) -->
+<style>
+  :root{ --build:#FF6A3D; --learn:#FFB23D; --shop:#F04438; }
+</style>
+<nav><a class="brand"><img src="assets/smoald-logo-nav.png" alt="SMOALD"></a></nav>
+
+<header class="hero">
+  <h1 class="hero-logo"><img src="assets/smoald-logo-hero.png" alt="SMOALD"></h1>
+  <p>One brand house, three doors. Build with AI, learn with us, or shop with us.</p>
+</header>
+
+<section class="doors">
+  <a href="ai.html" class="door build"><h2>SMOALD AI</h2><span class="live">6 live</span></a>
+  <a href="learn.html" class="door learn"><h2>SMOALD Learn</h2><span class="live">1 live</span></a>
+  <a href="store.html" class="door shop"><h2>SMOALD Store</h2><span class="soon">3 coming soon</span></a>
+</section>
+
+<section class="eco" id="ecosystem">
+  <h2>The Ecosystem</h2>
+  <button class="eco-node build" data-node="build">Build</button>
+  <button class="eco-node shop" data-node="shop">Shop</button>
+  <button class="eco-node learn" data-node="learn">Learn</button>
+</section>
+
+<section class="founder">
+  <h2>Founded by Joshua — smart, bold, and building in public.</h2>
+</section>
