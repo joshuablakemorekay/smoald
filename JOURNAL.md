@@ -135,3 +135,26 @@ A brand's name and status live in more spots than you expect — the card, the p
 This Claude Code session; live site `joshuablakemorekay.github.io/SMOALD-Living/`.
 
 ---
+
+## 2026-06-16 — Added SMOALD Lifestyle as a fourth mini-hub (experiment branch)
+
+**TL;DR:** Grew the brand house from three doors to four — a new SMOALD Lifestyle hub (Travel + Fitness & Wellness) — built safely on an experiment branch so the live site stays untouched until I'm happy.
+
+**Type:** Feature
+
+**What I built or did**
+A new green/teal `lifestyle.html` mini-hub with two coming-soon spokes: SMOALD Travel and SMOALD Fitness & Wellness. Reworked the homepage from three doors to four — a new Lifestyle door card, updated hero copy and button, and the interactive Ecosystem diagram reshaped from a triangle into a diamond. Added "Lifestyle" to the nav and every footer. SMOALD Living stays under Store for now.
+
+**Why I did it this way**
+The "L" for Lifestyle was already in the SBALD acronym, so the hub just realises a promise the brand already made. I built it on a `living-experiment` branch first so live smoald.com couldn't break while I experimented.
+
+**How We Did It**
+1) Sanity-checked the idea against the Virgin model → 2) synced and branched off main → 3) built the Lifestyle page → 4) extended the homepage's colour system, doors and Ecosystem to four → 5) wired Lifestyle into navs and footers → 6) previewed in the browser, then committed on the branch.
+
+**What I learned**
+Adding one hub ripples everywhere — a tri-colour system, a 3-spoke diagram and copy that literally said "three doors" all had to become four. Branching first let me restructure freely without risking the live site.
+
+**References / Conversations**
+This Claude Code session; branch `living-experiment` (not yet merged to main).
+
+---

@@ -40,7 +40,11 @@ I merged a Figma design I liked — a red/yellow/orange colour system and an int
 ### 2026-06-16 — Shipped the first Store product: SMOALD Living
 SMOALD Living (my homeware storefront) went live, so I wired it into the hub and made the Store page tell the truth — its card is now a live link, the ecosystem panel and door counter show "1 live", and the old "coming soon" badge and title became "first product live". **Key lesson:** a product's status lives in more places than you'd think (a card, a panel, a counter, a badge, even the page title) — a launch only feels finished after a sweep across all of them.
 
+### 2026-06-16 — Added a fourth hub: SMOALD Lifestyle (on an experiment branch)
+I grew the brand house from three doors to four — a new green/teal **SMOALD Lifestyle** hub with two coming-soon spokes (SMOALD Travel and SMOALD Fitness & Wellness). I reshaped the homepage to match: a new door card, updated hero, and the interactive Ecosystem diagram redrawn from a triangle into a diamond — plus Lifestyle added to every nav and footer. I did it all on a `living-experiment` branch so the live site stayed safe. **Key lesson:** adding one hub ripples everywhere — a tri-colour system, a 3-spoke diagram and copy that said "three doors" all had to become four — so branching first let me restructure freely without touching smoald.com.
+
 ## What's Next
-- Flip the remaining "coming soon" spokes to "live" as more Store and Learn products ship *(SMOALD Living ✓)*
+- Merge the SMOALD Lifestyle hub to `main` and go live once I'm happy with it
+- Flip the remaining "coming soon" spokes to "live" as more Store, Learn and Lifestyle products ship *(SMOALD Living ✓)*
 - Add a CV PDF + LinkedIn link to the portfolio page
 - Consider folding the standalone portfolio repo fully into this hub
