@@ -6,9 +6,11 @@ This folder documents the prompts used to **decide on, design, and build SMOALD.
 
 Each prompt directory contains the final version, the reasoning behind it, an executable evaluation rubric, and version history where the prompt was refined over time. Every rubric runs on every push via GitHub Actions.
 
+**Result:** [smoald.com](https://smoald.com) is live — built and hosted on the exact stack these prompts reasoned out.
+
 ## Index
 
-Listed in the order the work actually happened — from first decision to final polish.
+Listed in the order the work actually happened — from first decision to final polish. Two kinds of work live here: **decisions** (`analysis`) that set direction, and **builds** (`agent-workflow` / `code-generation`) that shipped it.
 
 | Prompt | Category | What it does | Iterated? |
 |---|---|---|---|
@@ -48,8 +50,8 @@ This library is structured to show:
 
 ## How to read this folder
 
-- **90 seconds:** read this index and skim the featured iteration.
-- **5 minutes:** read this index plus the [`REASONING.md`](./build-smoald-brand-hub/REASONING.md).
+- **90 seconds:** read this index and skim the featured iterations.
+- **5 minutes:** read this index plus the [`choose-hosting-platform` REASONING](./choose-hosting-platform/REASONING.md) — the clearest example of turning an open question into an evidence-based decision.
 - **Longer:** read the [CHANGELOG](./CHANGELOG.md) for the iteration story, then run the eval runner.
 
 ## Running the evaluations locally
