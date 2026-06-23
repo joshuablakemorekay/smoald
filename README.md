@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/smoald-readme-banner.png" alt="SMOALD" width="360" />
+  <img src="./assets/smoald-readme-banner.png" alt="SMOALD" width="100%" />
 </p>
 
 # SMOALD.com — Brand-House Hub

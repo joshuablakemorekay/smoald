@@ -16,13 +16,11 @@ def resize_h(img: Image.Image, h: int) -> Image.Image:
 
 
 def main():
+    # wide banner: bolt + wordmark side by side, centred on a full-width white field
     bolt = resize_h(Image.open(ASSETS / "smoald-bolt.png").convert("RGBA"), 150)
-    word = resize_h(Image.open(ASSETS / "smoald-wordmark.png").convert("RGBA"), 60)
+    word = resize_h(Image.open(ASSETS / "smoald-wordmark.png").convert("RGBA"), 78)
 
-    pad_x, pad_y, gap, radius = 90, 54, 26, 30
-    content_w = max(bolt.width, word.width)
-    W = content_w + pad_x * 2
-    H = pad_y * 2 + bolt.height + gap + word.height
+    W, H, radius, gap = 1280, 300, 26, 40
 
     canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(canvas)
@@ -30,8 +28,10 @@ def main():
     d.rounded_rectangle([0, 0, W - 1, H - 1], radius=radius, fill=(255, 255, 255, 255))
     d.rounded_rectangle([0, 0, W - 1, H - 1], radius=radius, outline=(26, 18, 11, 28), width=2)
 
-    canvas.alpha_composite(bolt, ((W - bolt.width) // 2, pad_y))
-    canvas.alpha_composite(word, ((W - word.width) // 2, pad_y + bolt.height + gap))
+    group_w = bolt.width + gap + word.width
+    x0 = (W - group_w) // 2
+    canvas.alpha_composite(bolt, (x0, (H - bolt.height) // 2))
+    canvas.alpha_composite(word, (x0 + bolt.width + gap, (H - word.height) // 2))
 
     out = ASSETS / "smoald-readme-banner.png"
     canvas.save(out)
