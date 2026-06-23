@@ -52,6 +52,9 @@ I grew the brand house from three doors to four — a new green/teal **SMOALD Li
 ### 2026-06-23 — Rebranded to red + gold and went live (four doors)
 I redesigned the whole site from the old dark theme to a clean white background with the SMOALD **red + gold** brand colours and my real lightning-bolt logo, then merged the four-door version (adding **SMOALD Lifestyle**) into `main` and deployed it live. Along the way I pulled all the repeated CSS/JS into one shared stylesheet, rebuilt the Store page around the live SMOALD Living product, and recoloured the Lifestyle hub from green to gold. **Key lesson:** a deep gold reads as orange when it fills a button — even a two-colour brand needs rules about *where* each colour goes; and one shared stylesheet turned the whole reskin into a handful of edits, not hundreds.
 
+### 2026-06-23 — Polished the launch: LinkedIn link + branded README banner
+After going live, I added my real LinkedIn link to the portfolio page (contact + footer) and redeployed, then gave this README a proper brand cover banner — the lightning bolt above the SMOALD wordmark on a white card. **Key lesson:** a transparent logo follows GitHub's light/dark theme, so I baked a white card into the image to keep it on the brand's white background; and upscaling a small PNG looks blurry, so I render the wordmark as *text* to keep it crisp at any size.
+
 ## What's Next
 - Flip the remaining "coming soon" spokes to "live" as more Store, Learn and Lifestyle products ship *(SMOALD Living ✓)*
 - Add a CV PDF + LinkedIn link to the portfolio page

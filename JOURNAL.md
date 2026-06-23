@@ -184,3 +184,29 @@ A deep gold reads as orange when it fills a button — so even a two-colour bran
 This Claude Code session; repo `joshuablakemorekay/SMOALD`, live at https://smoald.com.
 
 ---
+
+## 2026-06-23 — Post-launch polish: LinkedIn link + branded README banner
+
+**TL;DR:** Added my real LinkedIn link to the portfolio page, and gave the GitHub README a proper brand cover banner with the SMOALD wordmark rendered crisp (not blurry).
+
+**Type:** Polish
+
+**What I built or did**
+Swapped the placeholder `#` LinkedIn links on my hire page (contact + footer) for my real profile and redeployed. Added a cover banner to the top of the README — the lightning bolt above the SMOALD wordmark, on a white card, sized wide like a cover photo.
+
+**Why I did it this way**
+The README is the first thing people see on GitHub, so it should look on-brand. A transparent logo follows GitHub's dark/light theme, but my brand is red + gold on *white* — so I baked a white card into the image to lock that in.
+
+**How it works**
+A small Pillow script renders SMOALD as live text (SMO red, AL gold, D red) under the bolt — rendering text instead of scaling a PNG keeps it sharp at any size.
+
+**How We Did It**
+1) Added the LinkedIn link in both spots and redeployed → 2) put the bolt + wordmark at the top of the README → 3) it sat on GitHub's dark theme, so I moved it onto a white card → 4) widened it into a cover banner → 5) replaced the blurry upscaled wordmark with crisp rendered text.
+
+**What I learned**
+Upscaling a small PNG always looks blurry — rendering the wordmark as text keeps it crisp at any size. And transparent logos inherit the page's theme, so a baked-in white card is the reliable way to stay on-brand on GitHub.
+
+**References / Conversations**
+This Claude Code session; repo `joshuablakemorekay/SMOALD`, live at https://smoald.com.
+
+---
